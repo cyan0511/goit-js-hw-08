@@ -28,11 +28,7 @@ const onSubmit = e => {
   e.preventDefault();
   const email = emailEl.value;
   const message = messageEl.value;
-  if (!email || !message) {
-    alert('Enter both input parameters');
-    form.reset();
-    return;
-  }
+  console.log({ email, message });
   form.reset();
   localState.removeItem(FORM_STATE_KEY);
 };
