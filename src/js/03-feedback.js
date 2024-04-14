@@ -30,7 +30,7 @@ const onSubmit = e => {
   const message = messageEl.value;
   console.log({ email, message });
   form.reset();
-  localState.removeItem(FORM_STATE_KEY);
+  localStorage.removeItem(FORM_STATE_KEY);
 };
 
 form.addEventListener('input', throttle(onInput, 500));
